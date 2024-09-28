@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from "react";
 import './App.css';
+import logo from './assets/img/logo.png';
 
 const buttonStyle = {
   backgroundColor: '#613624', 
@@ -15,8 +16,7 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-        <h1>Howdy and High Noon:</h1>
-        <h2>A Western Whodunit </h2>
+        <img src = {logo} className = "App-logo"></img>
         <button style = {buttonStyle}>
           Start Game
         </button>
