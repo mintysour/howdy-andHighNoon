@@ -12,14 +12,30 @@ const buttonStyle = {
 };
 
 function App() {
+  const[gameStarted, getGameStarted] = useState(false);
+
+  const handleStartGame = () => {
+    setGameStarted(true);
+  };
+
   return (
       <div className="App">
         <header className="App-header">
         <h1>Howdy and High Noon:</h1>
         <h2>A Western Whodunit </h2>
-        <button style = {buttonStyle}>
-          Start Game
-        </button>
+
+       {/* Conditional rendering based on game state */}
+        {!gameStarted ? (
+          <button style={buttonStyle} onClick={handleStartGame}>
+            Start Game
+          </button>
+        ) : (
+          <div>
+            <h2>The game has started!</h2>
+            {/* Add more game content here */}
+
+          </div>
+        )}
         </header>
       </div>
   );
