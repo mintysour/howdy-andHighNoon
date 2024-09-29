@@ -19,6 +19,7 @@ const buttonStyle = {
 function Suspect() {
   return (
     <div className="Suspect">
+        <h1>Who do you want to investigate?</h1>
         <img src={bartender} className="Suspect-Img" alt="Bartender" />
         <img src={mayor} className="Suspect-Img" alt="Mayor" />
         <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
