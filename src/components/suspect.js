@@ -19,32 +19,34 @@ const buttonStyle = {
 function Suspect() {
   return (
     <div className="Suspect">
-        <h1>Who do you want to investigate?</h1>
-        <img src={bartender} className="Suspect-Img" alt="Bartender" />
-        <img src={mayor} className="Suspect-Img" alt="Mayor" />
-        <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
-        <img src={neighbor} className="Suspect-Img" alt="Neighbor" />
-        <Link to="/bartender">
-            <button style={buttonStyle}>
-                Bartender
-            </button>
-        </Link>
-        <Link to="/mayor">
-            <button style={buttonStyle}>
-                Mayor
-            </button>
-        </Link>
-        <Link to="/sheriff">
-        <button style={buttonStyle}>
-                Sheriff
-            </button>
-        </Link>
-        <Link to="/neighbor">
-            <button style={buttonStyle}>
-                Neighbor
-            </button>
-        </Link>
+        <div className="Suspect-item">
+            <div className="TextBox">
+                <h1>Who do you want to talk to?</h1>
+            </div>
+            <div className="Suspect-row">
+                <div className="Suspect-item">
+                    <img src={bartender} className="Suspect-Img" alt="Bartender" />
+                    <button style={buttonStyle}>Bartender</button>
+                </div>
+
+                <div className="Suspect-item">
+                    <img src={mayor} className="Suspect-Img" alt="Mayor" />
+                    <button style={buttonStyle}>Mayor</button>
+                </div>
+
+                <div className="Suspect-item">
+                    <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
+                    <button style={buttonStyle}>Sheriff</button>
+                </div>
+
+                <div className="Suspect-item">
+                    <img src={neighbor} className="Suspect-Img" alt="Neighbor" />
+                    <button style={buttonStyle}>Neighbor</button>
+                </div>
+            </div>
+        </div>
     </div>
+    
   );
 }
 

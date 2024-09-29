@@ -36,6 +36,7 @@ form {
   transform: translateX(-50%);
   min-width: 30rem;
 }
+
 input, select, textarea {
 width:  10%; /* Full width */
 padding: 15px; /* Space inside the input */
