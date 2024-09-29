@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import './mayor.css';
 import mayor from './assets/img/Mayor.png';
 
+
 // Associate each line with a speaker
 const storyData = [
   { text: "The mayor, Douglas, is in charge of the town and gave Detective Harper cases to work on. Age: 30.", speaker: "mayor"},
