@@ -21,7 +21,7 @@ function App() {
               <Route path="/suspect" element={<Suspect />} />
               <Route path="/bartender" element={<Suspect />} />
               <Route path="/sheriff" element={<Suspect />} />
-              <Route path="/neighbor" element={<Neighbor />} />
+              <Route path="/neighbor" element={<neighbor />} />
               <Route path="/suspect" element={<Suspect />} />
             </Routes>
           </div>
