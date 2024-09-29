@@ -33,6 +33,9 @@
     flex-direction: column;
     align-items: center;                 /* Center images and buttons */
     margin-bottom: 20px;       /* Center the image and button horizontally */
+    background-color: rgb(250, 233, 208); /* Semi-transparent black background */
+    border: 3px solid rgba(88, 52, 39); 
+    color: white;
 }
 
 .Suspect-row {
