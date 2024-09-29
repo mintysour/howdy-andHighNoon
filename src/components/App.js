@@ -5,6 +5,10 @@ import Prologue from './Prologue'; // Ensure this path is correct
 import PrologueParty from './PrologueParty';
 import PrologueMorning from './PrologueMorning';
 import Suspect from './suspect'; // Import the Suspect component
+import Neighbor from './neighbor';
+import Bartender from './bartender';
+import Sheriff from './sheriff';
+import Mayor from './mayor';
 import './App.css';
 
 function App() {
@@ -18,10 +22,10 @@ function App() {
               <Route path="/prologueparty" element={<PrologueParty />} />
               <Route path="/prologuemorning" element={<PrologueMorning />} />
               <Route path="/suspect" element={<Suspect />} />
-              <Route path="/bartender" element={<Suspect />} />
-              <Route path="/sheriff" element={<Suspect />} />
-              <Route path="/neighbor" element={<neighbor />} />
-              <Route path="/suspect" element={<Suspect />} />
+              <Route path="/bartender" element={<Bartender />} />
+              <Route path="/sheriff" element={<Sheriff />} />
+              <Route path="/neighbor" element={<Neighbor />} />
+              <Route path="/mayor" element={<Mayor />} />
             </Routes>
           </div>
       </Router>

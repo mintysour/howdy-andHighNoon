@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './suspect.css'; // Optional: create a CSS file for styles
+import { useNavigate } from 'react-router-dom';
+import './suspect.css';
 
 import bartender from './assets/img/Bartender.png';
 import mayor from './assets/img/Mayor.png';
@@ -17,6 +17,8 @@ const buttonStyle = {
 };
 
 function Suspect() {
+  const navigate = useNavigate(); // Hook to handle navigation
+
   return (
     <div className="Suspect">
         <div className="Suspect-item-box">
@@ -26,27 +28,26 @@ function Suspect() {
             <div className="Suspect-row">
                 <div className="Suspect-item">
                     <img src={bartender} className="Suspect-Img" alt="Bartender" />
-                    <button style={buttonStyle}>Bartender</button>
+                    <button style={buttonStyle} onClick={() => navigate('/bartender')}>Bartender</button>
                 </div>
 
                 <div className="Suspect-item">
                     <img src={mayor} className="Suspect-Img" alt="Mayor" />
-                    <button style={buttonStyle}>Mayor</button>
+                    <button style={buttonStyle} onClick={() => navigate('/mayor')}>Mayor</button>
                 </div>
 
                 <div className="Suspect-item">
                     <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
-                    <button style={buttonStyle}>Sheriff</button>
+                    <button style={buttonStyle} onClick={() => navigate('/sheriff')}>Sheriff</button>
                 </div>
 
                 <div className="Suspect-item">
                     <img src={neighbor} className="Suspect-Img" alt="Neighbor" />
-                    <button style={buttonStyle}>Neighbor</button>
+                    <button style={buttonStyle} onClick={() => navigate('/neighbor')}>Neighbor</button>
                 </div>
             </div>
         </div>
     </div>
-    
   );
 }
 
