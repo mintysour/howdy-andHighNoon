@@ -28,10 +28,13 @@ function Prologue() {
     setCurrentTextIndex(currentTextIndex + 1); // Move to the next text
   };
 
+  // Replace {PlayerName} with the actual player's name
+  const currentText = storyData[currentTextIndex].replace("{PlayerName}", playerName);
+
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
       <h1>Visual Novel</h1>
-      <p>{storyData[currentTextIndex]}</p>
+      <p>{currentText}</p>
 
       {isNameInputVisible && (
         <form onSubmit={handleNameSubmit}>
