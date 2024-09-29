@@ -5,9 +5,16 @@ import mayor from './assets/img/Mayor.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "The Mayor is known for being ambitious and often in the public eye.", speaker: "mayor" },
-  { text: "{PlayerName}: What can you tell me about Detective Harper?", speaker: "mayor" },
-  { text: "Mayor: Harper was a respected officer. She had a lot of enemies, though.", speaker: "mayor" },
+  { text: "The mayor, Douglas, is in charge of the town and gave Detective Harper cases to work on. Age: 30.", speaker: none},
+  { text: "{PlayerName}: Thank you for meeting with me today, Mayor Douglas. I wanted to discuss with you the murder of Detective Harper.", speaker: none},
+  { text: "Mayor Douglas: … Murder? … Of Harper? Are you telling the truth?", speaker: "mayor"}, 
+  { text: "{PlayerName}: Yes, unfortunately.", speaker: none}, 
+  { text: "Mayor Douglas: Wow… I can’t believe it. You know, we grew up together? It doesn’t seem that way now, but we were childhood friends…We were just together the other night… It can’t be true, she’s really dead?", speaker: "mayor"}, 
+  { text: "The mayor starts crying.", speaker: none},
+  { text: "{PlayerName}: Oh, yes, unfortunately it’s true. I need to ask you some questions regarding it.", speaker: null},
+  { text: "The mayors stops crying.", speaker: none},
+  { text: "Mayor Douglas: Oh, well I stayed back after the party a little to use the restroom, and when I made my way out of the tavern, I saw that she was the last guest to leave.", speaker: "mayor"}, 
+,
 ];
 
 const characterImages = {
