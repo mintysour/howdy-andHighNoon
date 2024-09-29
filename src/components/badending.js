@@ -7,7 +7,7 @@ import mayor from './assets/img/Mayor.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "As you lock up the criminal, the town cheers your name.", speaker: null },
+  { text: "<b>As you lock up the criminal, the town cheers your name.</b>", speaker: null },
   { text: '"{PlayerName}! Thank you for saving us once again!"', speaker: null},
   { text: '"Safe once again thanks to {PlayerName}"', speaker: null},
   { text: "The crowd rejoices, thankful that the murderer on the loose was now where they belong. But even though the masses are rejoicing, you can't help but feel uneasy.", speaker:null},
@@ -16,7 +16,7 @@ const storyData = [
   { text: "Before you can turn around, you hear a loud bang and feel a sharp, stinging pain in your back", speaker:null},
   { text: "???: I really thought you had me, but it turns out you're just as bad of a detective as that Harper was. Shouldn't have been poking your nose around in other people's business."},
   { text: "As your vision fades to black, you're filled with sadness.", speaker:null},
-  { text: "You couldn't avenge Harper, and her murderer is still walking free. Maybe in another life...", speaker:null},
+  { text: "<b>You couldn't avenge Harper, and her murderer is still walking free. Maybe if you had another chance...</b>", speaker:null},
   { text: ""}
 ];
 
@@ -56,7 +56,7 @@ function Badending() {
       {currentTextIndex < storyData.length -1 ? (
         // Render the dialogue box if we haven't reached the last index
         <>
-          <p className="thetext">{currentText}</p>
+          <p className="thetext" dangerouslySetInnerHTML={{ __html: currentText }}></p>
 
           {/* Render the character's image if available */}
           {speakerImage && (

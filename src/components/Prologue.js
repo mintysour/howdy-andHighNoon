@@ -4,10 +4,10 @@ import './Prologue.css';
 import detective from './assets/img/Detective.png';
 
 const storyData = [
-  { text: "After a grueling few weeks, you and your mentor, Detective Harper, finally closed your last case. Which means, its time to celebrate!", speaker: null},
-  { text: "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...", speaker: "detective" },
-  { text: "{PlayerName}: It was my pleasure! We finally stopped the cowboys who have been terrorizing the townsfolk.", speaker: "detective" }, 
-  { text: "Detective Harper: Good riddance. The town is throwing us a celebration for finally putting them behind bars. Let’s celebrate our success with everyone at the saloon!", speaker: "detective"}
+  { text: "<b>After a grueling few weeks, you and your mentor, Detective Harper, finally closed your last case. Which means, its time to celebrate!</b>", speaker: null},
+  { text: "<b>Detective Harper:</b> What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...", speaker: "detective" },
+  { text: "<b>{PlayerName}:</b> It was my pleasure! We finally stopped the cowboys who have been terrorizing the townsfolk.", speaker: "detective" }, 
+  { text: "<b>Detective Harper:</b> Good riddance. The town is throwing us a celebration for finally putting them behind bars. Let’s celebrate our success with everyone at the saloon!", speaker: "detective"}
 ];
 
 const characterImages = {
@@ -46,7 +46,7 @@ function Prologue() {
   return (
     <div className="Prologue">
       <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
-        <p className="thetext">{currentText}</p>
+        <p className="thetext" dangerouslySetInnerHTML={{ __html: currentText }}></p>
 
         {isNameInputVisible && (
           <form onSubmit={handleNameSubmit}>

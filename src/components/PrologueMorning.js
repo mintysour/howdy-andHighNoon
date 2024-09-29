@@ -7,19 +7,19 @@ import deadscene from './assets/img/deadscene.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "Walking towards the detective's office, you see the sheriff running towards you in a hasty manner.", speaker: null },
-  { text: "Sheriff Justin: Huff... huff... {PlayerName}! You must follow me quickly!", speaker: "sheriff"},
-  { text: "{PlayerName}: Officer Justin? What's wrong?", speaker: "sheriff" },
-  { text: "Sheriff Justin: There's no time to explain. Follow me!", speaker: "sheriff" },
-  { text: "You follow Sheriff Justin, anxious and confused. It isn't until you get to the scene that your eyes widen.", speaker: null },
-  { text: "{PlayerName}: ...", speaker: "player" },
-  { text: "{PlayerName}: ...?!?", speaker: "player" },
-  { text: "In front of you is the lifeless body of your mentor, who was alive just a few hours ago. The sight makes your blood run cold.", speaker: null },
-  { text: "{PlayerName}: How could this happen? What do you know? How long was she here for?!", speaker: "sheriff" },
-  { text: "Sheriff Justin: I'm sorry, {PlayerName}. I'm just as clueless as you are. The moment I saw this, I immediately ran to get you.", speaker: "sheriff" },
-  { text: "Detective Harper: I know this is hard... but you're the only one who can solve this case now. Will you help uncover this mystery?", speaker: "sheriff" },
+  { text: "<b>Walking towards the detective's office, you see the sheriff running towards you in a hasty manner.</b>", speaker: null },
+  { text: "<b>Sheriff Justin:</b> Huff... huff... {PlayerName}! You must follow me quickly!", speaker: "sheriff"},
+  { text: "<b>{PlayerName}:</b> Officer Justin? What's wrong?", speaker: "sheriff" },
+  { text: "<b>Sheriff Justin:</b> There's no time to explain. Follow me!", speaker: "sheriff" },
+  { text: "<b>You follow Sheriff Justin, anxious and confused. It isn't until you get to the scene that your eyes widen.<b>", speaker: null },
+  { text: "<b>{PlayerName}:</b> ...", speaker: "player" },
+  { text: "<b>{PlayerName}:</b> ...?!?", speaker: "player" },
+  { text: "<b>In front of you is the lifeless body of your mentor, who was alive just a few hours ago. The sight makes your blood run cold.<b>", speaker: null },
+  { text: "<b>{PlayerName}:</b> How could this happen? What do you know? How long was she here for?!", speaker: "sheriff" },
+  { text: "<b>Sheriff Justin:</b> I'm sorry, {PlayerName}. I'm just as clueless as you are. The moment I saw this, I immediately ran to get you.", speaker: "sheriff" },
+  { text: "<b>Detective Harper:</b> I know this is hard... but you're the only one who can solve this case now. Will you help uncover this mystery?", speaker: "sheriff" },
   { text: "... I can't believe it, but I know that I'm the only one in this town that knows what to do.", speaker: "player"},
-  { text: "It's up to me to avenge my mentor.", speaker: "player"},
+  { text: "<b>It's up to me to avenge my mentor.</b>", speaker: "player"},
   { text: " ", speaker: null}
 ];
 
@@ -64,7 +64,7 @@ function PrologueMorning() {
       {currentTextIndex < storyData.length - 1? (
         // Render the dialogue box if we haven't reached the last index
         <>
-          <p className="thetext">{currentText}</p>
+          <p className="thetext" dangerouslySetInnerHTML={{ __html: currentText }}></p>
 
           {/* Render the character's image if available */}
           {speakerImage && (
