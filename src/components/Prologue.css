@@ -17,9 +17,10 @@
   max-width: 1000px; /* Prevents it from becoming too wide */
   padding: 20px;    /* Adds padding inside the box */
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
-  border: 1px solid rgb(250, 233, 208);  /* Adds a white border */
+  border: 0px solid white;  /* Adds a white border */
+  border-radius: 2px;  /* Rounds the corners */
+  font-family: 'Bowlby One', sans-serif;
   border-radius: 3px;  /* Rounds the corners */
-  font-family: 'Arial', sans-serif;
   font-size: 25px;
    
 }
@@ -52,6 +53,25 @@ button {
   padding: 10px 15px; /* Button padding */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer on hover */
+}
+
+body {
+  font-family: 'Bowlby One', sans-serif; /* Default font for body text */
+}
+
+h1 {
+  font-family: 'Bowlby One', cursive; /* Apply Lobster font to headers */
+  font-weight: 400; /* Use the regular weight */
+}
+
+p {
+  font-family: 'Bowlby One', sans-serif; /* Apply Open Sans to paragraphs */
+  font-weight: 300; /* Light weight */
+}
+
+button {
+  font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
+  font-weight: 700; /* Bold weight for emphasis */
 }
 
 button:hover {
