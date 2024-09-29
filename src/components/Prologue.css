@@ -19,8 +19,7 @@
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
   border: 2px solid rgb(250, 233, 208);  /* Adds a white border */
   border-radius: 2px;  /* Rounds the corners */
-  font-family: 'Bowlby One', sans-serif;
-  border-radius: 3px;  /* Rounds the corners */
+  font: 'Courier New', sans-serif;
   font-size: 25px;
    
 }
@@ -29,7 +28,7 @@
 form {
     background-color: rgb(88, 52, 39); /* Background color */
     padding: 20px; /* Space inside the form */
-    border: 1px solid #ccc; /* Border style */
+    border: 1px solid rgb(250, 233, 208); /* Border style */
     border-radius: 5px; /* Rounded corners */
     position: absolute;
     top: 50%;
@@ -45,8 +44,10 @@ input, select, textarea {
   border-radius: 4px; /* Rounded corners */
   min-width: 20rem;
   background-color: rgb(250, 233, 208);
-  font-family: 'Lilita One', sans-serif;
+  font-family: 'Courier New', sans-serif;
+  font-weight: 600;
   font-size: 20px;
+  color:rgb(88, 52, 39);
 }
 
 button {
@@ -57,7 +58,7 @@ button {
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer on hover */
   font-size: 20px;
-}
+} 
 
 body {
   font-family: 'Bowlby One', sans-serif; /* Default font for body text */
@@ -69,7 +70,7 @@ h1 {
 }
 
 p {
-  font-family: 'Bowlby One', sans-serif; /* Apply Open Sans to paragraphs */
+  font-family: 'Courier New', sans-serif; /* Apply Open Sans to paragraphs */
   font-weight: 300; /* Light weight */
 }
 
