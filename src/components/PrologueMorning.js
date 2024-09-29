@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import './PrologueParty.css';
-import detective from './assets/img/Detective.png';
+import './PrologueMorning.css';
 import sheriff from './assets/img/sherrif.png';
-import bartender from './assets/img/Bartender.png';
-import mayor from './assets/img/Mayor.png';
-import neighbor from './assets/img/neighbor.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "You walk into the town saloon with Detective Harper. Upon your arrival, the townsfolk gather around you with excitement and joy.", speaker: null },
-  { text: "Theodore: Look who finally arrived! The heroes of this town!", speaker: "neighbor" },
-  { text: "Bartender Alexa: Welcome to Prairie Moon Tavern! I heard about your case, congrats Harper and {PlayerName}.", speaker: "bartender" },
-  { text: "{PlayerName}: Thank you! Does this mean my drinks are on you? ", speaker: "player" },
+  { text: "It's the next morning and you arrive at Detective Harper’s door for the next case, as usual.", speaker: null },
+  { text: "Knocking on the door, you wait for a response. But strangely, nothing happpens.", speaker: null },
+  { text: "{PlayerName}: Hmm... That's weird. Why isn't she answering the door?", speaker: "player" },
+  { text: "Sheriff Justin: Howdy {PlayerName}! What seems to be the problem? You look so confused.", speaker: "sheriff" },
   { text: "Bartender Alexa: Haha, if you tell me what your next case is, all drinks are on me.", speaker: "bartender" },
   { text: "Detective Harper: Nice try, our next case is top secret. I can’t disclose any details to anyone.", speaker: "detective" },
   { text: "Mayor Douglas: Top secret? I’m the Mayor, nothing is a secret from me! Fill me in Harper.", speaker: "mayor" },
@@ -27,15 +23,11 @@ const storyData = [
 
 // Map speakers to their images
 const characterImages = {
-  detective: detective,
-  bartender: bartender,
-  mayor: mayor,
-  neighbor: neighbor,
   sheriff: sheriff,
   player: null // No image for the player character
 };
 
-function PrologueParty() {
+function PrologueMorning() {
   const location = useLocation();
   const playerName = location.state?.playerName || ''; // Retrieve the player name from location state
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -50,14 +42,10 @@ function PrologueParty() {
     if (currentTextIndex < storyData.length - 1) {
       setCurrentTextIndex(currentTextIndex + 1);
     }
-    else {
-    // If it's the last line, navigate to PrologueParty
-    navigate('/prologuemorning', { state: { playerName } });
-    }
   };
 
   return (
-    <div className="PrologueParty" onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
+    <div className="PrologueMorning" onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
       <p className="thetext">{currentText}</p>
 
       {/* Render the character's image if available */}
@@ -68,4 +56,4 @@ function PrologueParty() {
   );
 }
 
-export default PrologueParty;
+export default PrologueMorning;
