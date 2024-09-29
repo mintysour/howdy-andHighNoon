@@ -33,8 +33,8 @@ function Prologue() {
 
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
-      <h1>Visual Novel</h1>
-      <p>{currentText}</p>
+      
+      <p class = "thetext">{currentText}</p>
 
       {isNameInputVisible && (
         <form onSubmit={handleNameSubmit}>
