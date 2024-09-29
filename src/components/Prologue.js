@@ -42,7 +42,7 @@ function Prologue() {
             type="text"
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
-            placeholder="Enter your name"
+            placeholder="Enter your first name"
             required
           />
           <button type="submit">Submit</button>
