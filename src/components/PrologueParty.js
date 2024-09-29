@@ -20,7 +20,7 @@ const storyData = [
   { text: "Detective Harper: Haha, patience Mayor. I don’t have the details hashed out at this moment, but once I fill {PlayerName} in, I’ll be sure to send a case report to you, Douglas.", speaker: "detective" },
   { text: "Sheriff Justin: What are you kidding Douglas? Even if you didn’t know, I’m sure the town would be fine regardless.", speaker: "sheriff" },
   { text: "Mayor Douglas: Well, I can’t argue with you there, Justin. Anyways, congrats guys! It’s good that we have two detectives in our town to keep us nice and safe.", speaker: "mayor" },
-  { text: "Detective Harper: Of course! Anything to keep our citizens safe! Now, shall we get drinking?", speaker: "detective" },
+  { text: "Detective Harper: Ahaha, you guys are too much! Anything to keep our citizens safe! Now, shall we get drinking?", speaker: "detective" },
   { text: "The saloon erupts in joy and sounds of clinking glass echo throughout the town. The celebration runs long and minutes turn into hours, and before you know it, you’re saying goodbye to the townsfolk before heading home.", speaker: null },
   { text: "Finally in bed, you’re ready to get as much sleep as you can before work the next day…", speaker: null }
 ];
