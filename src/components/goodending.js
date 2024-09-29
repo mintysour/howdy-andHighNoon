@@ -3,21 +3,31 @@ import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './goodending.css';
 import mayor from './assets/img/Mayor.png';
+import sheriff from './assets/img/sherrif.png';
+
 //import deadscene from './assets/img/deadscene.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "Mayor Douglass: ...", speaker: "mayor" },
-  { text: "Mayor Douglass: ...Me? What makes you think it's me?", speaker: "mayor"},
-  { text: "{PlayerName}: Douglass, all evidence points to you!", speaker: "mayor"},
-  { text: "Mayor Douglass: What are you talking about?! What about Sheriff Justin's gun? Bartender Alexa's quick escape? Neighbor Theodore and his creepy house?!", speaker: "mayor"},
-  { text: "{PlayerName}: Sheriff Justin always has his gun on him. Bartender Alexa lives far away, so she leaves early so that she doesn't arrive late. And Neighbor Theodore... has unique hobbies!", speaker: "mayor"},
-  { text: "{PlayerName}: You weren't working last night. Detective Harper caught you and confronted you, didn't see"}
+  { text: "Mayor Douglas: ...", speaker: "mayor" },
+  { text: "Mayor Douglas: ...Me? What makes you think it's me?", speaker: "mayor"},
+  { text: "{PlayerName}: Douglas, all evidence points to you!", speaker: "mayor"},
+  { text: "Mayor Douglas: What are you talking about?! What about Sheriff Justin's gun? Bartender Alexa's quick escape? Neighbor Theodore and his creepy house?!", speaker: "mayor"},
+  { text: "{PlayerName}: Sheriff Justin always has his gun on him, it has meaning. As for Alexa, she lives far away, so she leaves early so that she doesn't arrive late, and the sheriff confirmed she's always rushing. And Neighbor Theodore... has unique hobbies!", speaker: "mayor"},
+  { text: "{PlayerName}: You weren't working last night were you. Detective Harper caught you and confronted you, didn't she?. She found out something you didn't want her to know, so you silenced her."},
+  { text: "Mayor Douglas: ...", speaker: "mayor"},
+  { text: "Mayor Douglas: I knew I should've gotten rid of you too.", speaker: "mayor"},
+  { text: "Mayor Douglas: That detective was threatening to expose my embezzling! I mean, come ON. So many years of friendship and she can't just let something slide?", speaker: "mayor"},
+  { text: "Mayor Douglas: I had to quiet her, but I should've known she wouldve taught you well, cause she was a damn good detective.", speaker: "mayor"},
+  { text: "Mayor Douglas: She shouldn't have been so lenient with me though, look where it got her. Her trust was her most fatal--",  speaker: "mayor"},
+  { text: "The sheriff tackles the mayor to the ground and puts handcuffs on him.", speaker: null},
+  { text: "Sheriff Justin: Well, that's enough from him. Good work, {PlayerName}, Harper would be so proud to call you her successor.", speaker: "sheriff"}
 ];
 
 // Map speakers to their images
 const characterImages = {
   mayor: mayor,
+  sheriff: sheriff,
   player: null // No image for the player character
 };
 
@@ -64,7 +74,7 @@ function Goodending() {
           <h2 className="mission">GOOD ENDING</h2>
           <p className="missiontext">You were able to find the culprit, protect the town, and avenge Detective Harper!.</p>
           <p className="missiontext">CREDITS: Naomi Dao, Marci Van, Bhavana Venkatesh</p>
-          <button className="missionButton" onClick={() => navigate('/')}>Restart?</button>
+          <button className="missionButton" onClick={() => navigate('/')}>Play Again?</button>
         </div>
       )}
     </div>
