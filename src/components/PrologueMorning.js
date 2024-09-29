@@ -77,7 +77,7 @@ function PrologueMorning() {
           <h2 className="mission">NEW MISSION</h2>
           <p className="missiontext">Detective Harper has been murdered! It's your mission to discover the culprit and uncover the case Harper was working on right before her death.</p>
           <p className="missiontext">Talk to the townspeople to uncover clues and complete your <b>TASKS</b> to fulfill your mission.</p>
-          <button className="missionButton" onClick={() => navigate('/suspect')}>Start Mission</button>
+          <button className="missionButton" onClick={() => navigate('/suspect',{ state: { playerName } })}>Start Mission</button>
         </div>
       )}
     </div>

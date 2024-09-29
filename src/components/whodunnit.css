@@ -1,0 +1,12 @@
+.whodunnit {
+    text-align: center;
+    min-height: 100vh;
+    background-image:url('./assets/img/townbackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;                   /* Flexbox for horizontal layout */
+    justify-content: space-around;   /* Even spacing between items */
+    align-items: flex-start;         /* Align items at the top */
+    padding: 20px;
+}
