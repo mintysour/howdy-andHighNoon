@@ -1,0 +1,45 @@
+.PrologueMorning {
+    text-align: center;
+    min-height: 100vh;
+    background-image:url('./assets/img/townbackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+
+.thetext {
+  color:rgb(250, 233, 208);
+  position: fixed;
+  bottom: 80px;
+  left: 50%;        /* Centers the box horizontally */
+  transform: translateX(-50%); /* Centers the box */
+  width: 80%;   
+  max-width: 1000px; /* Prevents it from becoming too wide */
+  padding: 20px;    /* Adds padding inside the box */
+  background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
+  border: 0px solid white;  /* Adds a white border */
+  border-radius: 2px;  /* Rounds the corners */
+  font-family: 'Bowlby One', sans-serif;
+}
+  
+  .PrologueMorning-header h1 {
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove any padding if present */
+  }
+  
+  .PrologueMorning-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #613624;
+  }
+  
+  .PrologueMorning-link {
+    color: #61dafb;
+  }
+  
+  
+  
