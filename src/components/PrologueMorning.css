@@ -19,9 +19,19 @@
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
   border: 0px solid white;  /* Adds a white border */
   border-radius: 2px;  /* Rounds the corners */
-  font-family: 'Bowlby One', sans-serif;
+  font-family: 'Courrier', sans-serif;
 }
   
+.text-box {
+  background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
+}
+
+.mission {
+
+}
+
+
+
   .PrologueMorning-header h1 {
     margin: 0; /* Remove the default margin */
     padding: 0; /* Remove any padding if present */
