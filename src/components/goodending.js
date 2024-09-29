@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-//import './goodending.css';
+import './goodending.css';
 import mayor from './assets/img/Mayor.png';
 //import deadscene from './assets/img/deadscene.png';
 
@@ -40,7 +40,7 @@ function Goodending() {
 
   return (
     <div
-      className="goodending"
+      className="ending"
       onClick={handleClick}
       style={{
         cursor: 'pointer',
