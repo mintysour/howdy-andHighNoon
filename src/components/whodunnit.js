@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './suspect.css';
+import { useLocation, useNavigate } from 'react-router-dom';
+import './whodunnit.css';
 
 import bartender from './assets/img/Bartender.png';
 import mayor from './assets/img/Mayor.png';
@@ -19,6 +19,9 @@ const buttonStyle = {
 
 function Whodunnit() {
   const navigate = useNavigate(); // Hook to handle navigation
+  const location = useLocation();
+  const playerName = location.state?.playerName || ''; // Retrieve the player name from location state
+
 
   return (
     <div className="whodunnit">
@@ -30,25 +33,25 @@ function Whodunnit() {
           <div className="Suspect-item">
             <img src={bartender} className="Suspect-Img" alt="Bartender" />
             {/* Update the onClick to be a function */}
-            <button style={buttonStyle} onClick={() => navigate('/badending')}>Bartender</button>
+            <button style={buttonStyle} onClick={() => navigate('/badending', { state: { playerName } })}>Bartender</button>
           </div>
 
           <div className="Suspect-item">
             <img src={mayor} className="Suspect-Img" alt="Mayor" />
             {/* Update the onClick to be a function */}
-            <button style={buttonStyle} onClick={() => navigate('/goodending')}>Mayor</button>
+            <button style={buttonStyle} onClick={() => navigate('/goodending',  { state: { playerName } })}>Mayor</button>
           </div>
 
           <div className="Suspect-item">
             <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
             {/* Update the onClick to be a function */}
-            <button style={buttonStyle} onClick={() => navigate('/badending')}>Sheriff</button>
+            <button style={buttonStyle} onClick={() => navigate('/badending', { state: { playerName } })}>Sheriff</button>
           </div>
 
           <div className="Suspect-item">
             <img src={neighbor} className="Suspect-Img" alt="Neighbor" />
             {/* Update the onClick to be a function */}
-            <button style={buttonStyle} onClick={() => navigate('/badending')}>Neighbor</button>
+            <button style={buttonStyle} onClick={() => navigate('/badending', { state: { playerName } })}>Neighbor</button>
           </div>
         </div>
       </div>

@@ -7,9 +7,12 @@ import mayor from './assets/img/Mayor.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "Walking towards the detective's office, you see the sheriff running towards you in a hasty manner.", speaker: null },
-  { text: "Sheriff Justin: Huff... huff... {PlayerName}! You must follow me quickly!", speaker: "mayor"},
-  { text: " ", speaker: null}
+  { text: "Mayor Douglass: ...", speaker: "mayor" },
+  { text: "Mayor Douglass: ...Me? What makes you think it's me?", speaker: "mayor"},
+  { text: "{PlayerName}: Douglass, all evidence points to you!", speaker: "mayor"},
+  { text: "Mayor Douglass: What are you talking about?! What about Sheriff Justin's gun? Bartender Alexa's quick escape? Neighbor Theodore and his creepy house?!", speaker: "mayor"},
+  { text: "{PlayerName}: Sheriff Justin always has his gun on him. Bartender Alexa lives far away, so she leaves early so that she doesn't arrive late. And Neighbor Theodore... has unique hobbies!", speaker: "mayor"},
+  { text: "{PlayerName}: You weren't working last night. Detective Harper caught you and confronted you, didn't see"}
 ];
 
 // Map speakers to their images
@@ -59,8 +62,8 @@ function Goodending() {
         // Render the mission box once the last line of dialogue is done
         <div className="text-box">
           <h2 className="mission">GOOD ENDING</h2>
-          <p className="missiontext">Detective Harper has been murdered! It's your mission to discover the culprit and uncover the case Harper was working on right before her death.</p>
-          <p className="missiontext">Talk to the townspeople to uncover clues and complete your <b>TASKS</b> to fulfill your mission.</p>
+          <p className="missiontext">You were able to find the culprit, protect the town, and avenge Detective Harper!.</p>
+          <p className="missiontext">CREDITS: Naomi Dao, Marci Van, Bhavana Venkatesh</p>
           <button className="missionButton" onClick={() => navigate('/')}>Restart?</button>
         </div>
       )}
