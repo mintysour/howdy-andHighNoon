@@ -6,11 +6,11 @@ import logo from './assets/img/logo.png';
 const buttonStyle = {
   backgroundColor: '#613624', 
   color: 'white', 
-  padding: '10px 20px', 
+  padding: '40px 50px', 
   border: 'none', 
-  borderRadius: '5px', 
+  borderRadius: '18px', 
   cursor: 'pointer', 
-  fontSize: '32px', 
+  fontSize: '52px', 
 };
 
 function Start() {
@@ -19,7 +19,7 @@ function Start() {
       <img src = {logo} className = "Start-logo"></img>
       <Link to="/prologue">
         <button style={buttonStyle}>
-          Start Game
+          Start Investigating
         </button>
       </Link>
     </header>
