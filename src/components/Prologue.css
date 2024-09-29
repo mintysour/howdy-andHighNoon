@@ -8,7 +8,7 @@
   }
 
 .thetext {
-  color:white;
+  color:#583427;
   position: fixed;
   bottom: 80px;
   left: 50%;        /* Centers the box horizontally */
@@ -16,10 +16,10 @@
   width: 80%;   
   max-width: 1000px; /* Prevents it from becoming too wide */
   padding: 20px;    /* Adds padding inside the box */
-  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  background-color: rgba(210, 182, 146, 1); /* Dark semi-transparent background */
   border: 2px solid white;  /* Adds a white border */
   border-radius: 10px;  /* Rounds the corners */
-  color: white;  
+   
 }
   .Prologue-logo {
     height: 40vmin;
