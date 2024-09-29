@@ -44,7 +44,7 @@ input, select, textarea {
   border: 1px solid rgb(88, 52, 39); /* Border style */
   border-radius: 4px; /* Rounded corners */
   min-width: 20rem;
-  background-color: rgb(250, 233, 208) ;
+  background-color: rgb(250, 233, 208);
 }
 
 button {
