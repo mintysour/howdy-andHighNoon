@@ -5,6 +5,7 @@ import Prologue from './Prologue'; // Ensure this path is correct
 import PrologueParty from './PrologueParty';
 import PrologueMorning from './PrologueMorning';
 import Suspect from './suspect'; // Import the Suspect component
+import neighbor from './neighbor'; // Import the neighbor component
 import './App.css';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
               <Route path="/suspect" element={<Suspect />} />
               <Route path="/bartender" element={<Suspect />} />
               <Route path="/sheriff" element={<Suspect />} />
-              <Route path="/neighbor" element={<neighbor />} />
+              <Route path="/neighbor" element={<Neighbor />} />
               <Route path="/suspect" element={<Suspect />} />
             </Routes>
           </div>

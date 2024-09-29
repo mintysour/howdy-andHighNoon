@@ -28,7 +28,7 @@ const characterImages = {
   player: null // No image for the player character
 };
 
-function neighbor() {
+function Neighbor() {
   const location = useLocation();
   const playerName = location.state?.playerName || ''; // Retrieve the player name from location state
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -76,4 +76,4 @@ function neighbor() {
   );
 }
 
-export default neighbor;
+export default Neighbor;
