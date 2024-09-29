@@ -14,7 +14,7 @@ const storyData = [
   { text: "You go back to Detective Harper's office, feeling lost and empty", speaker: null},
   { text: "As you look back at the familiar room, basking in the nostalgia, you hear the door open.", speaker: null},
   { text: "Before you could turn around, you hear a loud bang and feel a sharp and stinging pain in your back", speaker:null},
-  { text: "???: I thought you really had me, but turns out, you're just as bad as a detective as that Harper was. "}
+  { text: "???: I thought you really had me, but turns out, you're just as bad as a detective as that Harper was. "},
   { text: "As your vision fades to black, you're filled with regret.", speaker:null},
   { text: "You couldn't avenge Harper.", speaker:null}
 ];
