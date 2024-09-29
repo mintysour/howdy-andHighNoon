@@ -34,5 +34,9 @@
 
   button {
     font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
-    font-weight: 600; /* Bold weight for emphasis */
+    font-weight: 700; /* Bold weight for emphasis */
+  }
+  
+  button:hover {
+    background-color: #452517; /* Button color on hover */
   }
