@@ -19,91 +19,66 @@
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
   border: 2px solid rgb(250, 233, 208);  /* Adds a white border */
   border-radius: 2px;  /* Rounds the corners */
-  font-family: 'Bowlby One', sans-serif;
-  border-radius: 3px;  /* Rounds the corners */
+  font: 'Courier New', sans-serif;
   font-size: 25px;
-   
+    
 }
 
 
 form {
-    background-color: rgb(88, 52, 39); /* Background color */
-    padding: 20px; /* Space inside the form */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 5px; /* Rounded corners */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 30rem;
+  background-color: rgb(88, 52, 39); /* Background color */
+  padding: 20px; /* Space inside the form */
+  border: 1px solid rgb(250, 233, 208); /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 30rem;
 }
 input, select, textarea {
-  width:  10%; /* Full width */
-  padding: 10px; /* Space inside the input */
-  margin: 5px 0; /* Space between inputs */
-  border: 1px solid rgb(88, 52, 39); /* Border style */
-  border-radius: 4px; /* Rounded corners */
-  min-width: 20rem;
-  background-color: rgb(250, 233, 208);
-  font-family: 'Lilita One', sans-serif;
-  font-size: 20px;
+width:  10%; /* Full width */
+padding: 15px; /* Space inside the input */
+margin: 15px ; /* Space between inputs */
+border: 1px solid rgb(88, 52, 39); /* Border style */
+border-radius: 4px; /* Rounded corners */
+min-width: 17rem;
+background-color: rgb(250, 233, 208);
+font-family: 'Courier New', sans-serif;
+font-weight: 600;
+font-size: 20px;
+color:rgb(88, 52, 39);
 }
 
 button {
-  background-color: #495563; /* Button color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  padding: 10px 15px; /* Button padding */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  font-size: 20px;
-}
+background-color: #495563; /* Button color */
+color: white; /* Text color */
+border: none; /* Remove border */
+padding: 10px 15px; /* Button padding */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+font-size: 20px;
+} 
 
 body {
-  font-family: 'Bowlby One', sans-serif; /* Default font for body text */
+font-family: 'Bowlby One', sans-serif; /* Default font for body text */
 }
 
 h1 {
-  font-family: 'Bowlby One', cursive; /* Apply Lobster font to headers */
-  font-weight: 400; /* Use the regular weight */
+font-family: 'Bowlby One', cursive; /* Apply Lobster font to headers */
+font-weight: 400; /* Use the regular weight */
 }
 
 p {
-  font-family: 'Bowlby One', sans-serif; /* Apply Open Sans to paragraphs */
-  font-weight: 300; /* Light weight */
+font-family: 'Courier New', sans-serif; /* Apply Open Sans to paragraphs */
+font-weight: 300; /* Light weight */
 }
 
 button {
-  font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
-  font-weight: 700; /* Bold weight for emphasis */
+font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
+font-weight: 700; /* Bold weight for emphasis */
 }
 
 button:hover {
-  background-color: #2e3e52; /* Button color on hover */
+background-color: #2e3e52; /* Button color on hover */
 }
-  .Prologue-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .Prologue-header h1 {
-    margin: 0; /* Remove the default margin */
-    padding: 0; /* Remove any padding if present */
-  }
-  
-  .Prologue-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #613624;
-  }
-  
-  .Prologue-link {
-    color: #61dafb;
-  }
-  
-  
-  
