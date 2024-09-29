@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import './Start.css'; // Optional: create a CSS file for styles
+import './suspect.css'; // Optional: create a CSS file for styles
 
 import bartender from './assets/img/Bartender.png';
 import mayor from './assets/img/Mayor.png';
-import sherrif from './assets/img/sheriff.png';
+import sheriff from './assets/img/sherrif.png';
 import neighbor from './assets/img/neighbor.png';
 
 const buttonStyle = {
@@ -16,13 +16,13 @@ const buttonStyle = {
   fontSize: '32px', 
 };
 
-function Start() {
+function Suspect() {
   return (
-    <div className="Prologue">
-        <img src = {bartender} className = "Suspect-Img"></img>
-        <img src = {mayor} className = "Suspect-Img"></img>
-        <img src = {sherrif} className = "Suspect-Img"></img>
-        <img src = {neighbor} className = "Suspect-Img"></img>
+    <div className="Suspect">
+        <img src={bartender} className="Suspect-Img" alt="Bartender" />
+        <img src={mayor} className="Suspect-Img" alt="Mayor" />
+        <img src={sheriff} className="Suspect-Img" alt="Sheriff" />
+        <img src={neighbor} className="Suspect-Img" alt="Neighbor" />
         <Link to="/bartender">
             <button style={buttonStyle}>
                 Bartender
@@ -33,7 +33,7 @@ function Start() {
                 Mayor
             </button>
         </Link>
-        <Link to="/sherrif">
+        <Link to="/sheriff">
         <button style={buttonStyle}>
                 Sheriff
             </button>
@@ -46,3 +46,5 @@ function Start() {
     </div>
   );
 }
+
+export default Suspect;
