@@ -20,6 +20,8 @@
   border: 0px solid white;  /* Adds a white border */
   border-radius: 2px;  /* Rounds the corners */
   font-family: 'Bowlby One', sans-serif;
+  border-radius: 3px;  /* Rounds the corners */
+  font-size: 25px;
    
 }
 
@@ -29,6 +31,11 @@ form {
     padding: 20px; /* Space inside the form */
     border: 1px solid #ccc; /* Border style */
     border-radius: 5px; /* Rounded corners */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 30rem;
 }
 input, select, textarea {
   width:  10%; /* Full width */
@@ -36,6 +43,7 @@ input, select, textarea {
   margin: 5px 0; /* Space between inputs */
   border: 1px solid rgb(88, 52, 39); /* Border style */
   border-radius: 4px; /* Rounded corners */
+  min-width: 20rem;
 }
 
 button {
