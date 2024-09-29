@@ -20,7 +20,6 @@ function Mayor() {
   const playerName = location.state?.playerName || ''; // Retrieve the player name from location state
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [hasTalkedToMayor, setHasTalkedToMayor] = useState(false); // Boolean state
-  const navigate = useNavigate(); // useNavigate for routing
 
   const currentLine = storyData[currentTextIndex];
   const currentText = currentLine.text.replace("{PlayerName}", playerName);
@@ -52,3 +51,4 @@ function Mayor() {
 }
 
 export default Mayor;
+
