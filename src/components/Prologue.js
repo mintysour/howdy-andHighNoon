@@ -4,10 +4,15 @@ import './Prologue.css';
 import detective from './assets/img/Detective.png';
 
 const storyData = [
-  "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...",
-  "{PlayerName}: It was my pleasure! We finally stopped the cowboys who have been terrorizing the townsfolk.",  
-  "Detective Harper: Good riddance. The town is throwing us a celebration for finally putting them behind bars. Let’s celebrate our success with everyone at the saloon!"
+  { text: "After a grueling few weeks, you and your mentor, Detective Harper, finally closed your last case. Which means, its time to celebrate!", speaker: null},
+  { text: "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...", speaker: "detective" },
+  { text: "{PlayerName}: It was my pleasure! We finally stopped the cowboys who have been terrorizing the townsfolk.", speaker: "detective" }, 
+  { text: "Detective Harper: Good riddance. The town is throwing us a celebration for finally putting them behind bars. Let’s celebrate our success with everyone at the saloon!", speaker: "detective"}
 ];
+
+const characterImages = {
+  detective: detective
+}
 
 function Prologue() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -17,7 +22,7 @@ function Prologue() {
 
   const handleClick = () => {
     // Show name input after the first line
-    if (currentTextIndex === 0) {
+    if (currentTextIndex === 1) {
       setIsNameInputVisible(true);
     } else if (currentTextIndex < storyData.length - 1) {
       // Progress the story text
@@ -34,7 +39,9 @@ function Prologue() {
     setCurrentTextIndex(currentTextIndex + 1); // Progress to the next line after name is submitted
   };
 
-  const currentText = storyData[currentTextIndex].replace("{PlayerName}", playerName);
+  const currentLine = storyData[currentTextIndex];
+  const currentText = currentLine.text.replace("{PlayerName}", playerName);
+  const speakerImage = characterImages[currentLine.speaker];
 
   return (
     <div className="Prologue">
@@ -53,7 +60,9 @@ function Prologue() {
             <button type="submit">Submit</button>
           </form>
         )}
-        <img src = {detective} className = "Detective"></img>
+        {speakerImage && (
+        <img src={speakerImage} className="Character" alt={currentLine.speaker} />
+      )}
       </div>
     </div>
   );
