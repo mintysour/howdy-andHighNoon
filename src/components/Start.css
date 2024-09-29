@@ -1,0 +1,33 @@
+.Start {
+    text-align: center;
+    min-height: 100vh;
+    background-image:url('./assets/img/townbackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+
+
+  .Start-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .Start-header h1 {
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove any padding if present */
+  }
+  
+  .Start-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #613624;
+  }
+  
+  .Start-link {
+    color: #61dafb;
+  }
