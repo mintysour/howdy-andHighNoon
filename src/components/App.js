@@ -4,6 +4,7 @@ import Start from './Start'; // Make sure to import the Start component
 import Prologue from './Prologue'; // Ensure this path is correct
 import PrologueParty from './PrologueParty';
 import PrologueMorning from './PrologueMorning';
+import Suspect from './suspect'; // Import the Suspect component
 import './App.css';
 
 function App() {
@@ -16,6 +17,11 @@ function App() {
               <Route path="/prologue" element={<Prologue />} />
               <Route path="/prologueparty" element={<PrologueParty />} />
               <Route path="/prologuemorning" element={<PrologueMorning />} />
+              <Route path="/suspect" element={<Suspect />} />
+              <Route path="/bartender" element={<Suspect />} />
+              <Route path="/sheriff" element={<Suspect />} />
+              <Route path="/neighbor" element={<Suspect />} />
+              <Route path="/suspect" element={<Suspect />} />
             </Routes>
           </div>
       </Router>

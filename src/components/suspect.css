@@ -10,9 +10,17 @@
 .Suspect-Img {
     height: 40vmin;
     pointer-events: none;
-  }
+}
+
+.Suspect-header h1 {
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove any padding if present */
+}
 
 button {
     font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
     font-weight: 600; /* Bold weight for emphasis */
+    margin-top: 20px;        /* Add some margin between buttons and images */
+    padding: 10px 20px;
+    grid-column: span 4;
   }
