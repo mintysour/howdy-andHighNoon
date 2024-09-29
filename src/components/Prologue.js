@@ -53,8 +53,7 @@ function Prologue() {
             <button type="submit">Submit</button>
           </form>
         )}
-
-        <img src={detective} className="Detective" alt="Detective" />
+        <img src = {detective} className = "Detective"></img>
       </div>
     </div>
   );
