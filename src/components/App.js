@@ -29,6 +29,7 @@ function App() {
               <Route path="/bartender" element={<Bartender />} />
               <Route path="/sheriff" element={<Sheriff />} />
               <Route path="/neighbor" element={<Neighbor />} />
+              <Route path="/mayor" element={<Mayor />} />
               <Route path="/whodunnit" element={<Whodunnit />} />
               <Route path="/badending" element={<Badending />} />
               <Route path="/goodending" element={<Goodending />} />

@@ -5,8 +5,8 @@ import neighbor from './assets/img/neighbor.png';
 
 // Associate each line with a speaker
 const storyData = [
-  { text: "The neighbor, Theodore lives next door to Detective Harper. Age: 56 years old." , speaker : null},
-  { text: "{PlayerName}: Howdy Neighbor! I’m investigating the murder of Detective Harper.", speaker: null},
+  { text: "The neighbor, Theodore lives next door to Detective Harper. Age: 56 years old." , speaker : "neighbor"},
+  { text: "{PlayerName}: Howdy Neighbor! I’m investigating the murder of Detective Harper.", speaker: "neighbor"},
   { text: "Neighbor Theodore: What?? She’s… dead? We were all just together last night having a Party… I saw her just last night…", speaker: "neighbor"},
   { text: "{PlayerName}: I know, it’s all very sudden, but as her apprentice I’m trying to get to the bottom of it as soon as possible. Do you have any information at all?", speaker: "neighbor"},
   { text: "Neighbor Theodore: Hmm… Well last night, I thought I might’ve heard something really late – a loud bang sound maybe sometime around 3 AM. I’ve been having real trouble going to sleep lately, and I thought maybe my mind were playin’ tricks on me.", speaker: "neighbor"},
