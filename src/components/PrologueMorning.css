@@ -17,12 +17,22 @@
   max-width: 1000px; /* Prevents it from becoming too wide */
   padding: 20px;    /* Adds padding inside the box */
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
-  border: 2px solid rgb(250, 233, 208, 0.65);  /* Adds a white border */
-  border-radius: 5px;  /* Rounds the corners */
+  border: 0px solid white;  /* Adds a white border */
+  border-radius: 5px; /* Rounds the corners */
   font-family: 'Courier New', sans-serif;
   font-weight: 550;
 }
   
+.text-box {
+  background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
+}
+
+.mission {
+
+}
+
+
+
   .PrologueMorning-header h1 {
     margin: 0; /* Remove the default margin */
     padding: 0; /* Remove any padding if present */
