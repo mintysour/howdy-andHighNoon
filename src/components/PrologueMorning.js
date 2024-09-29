@@ -19,7 +19,8 @@ const storyData = [
   { text: "Sheriff Justin: I'm sorry, {PlayerName}. I'm just as clueless as you are. The moment I saw this, I immediately ran to get you.", speaker: "sheriff" },
   { text: "Detective Harper: I know this is hard... but you're the only one who can solve this case now. Will you help uncover this mystery?", speaker: "sheriff" },
   { text: "... I can't believe it, but I know that I'm the only one in this town that knows what to do.", speaker: "player"},
-  { text: "It's up to me to avenge my mentor.", speaker: "player"}
+  { text: "It's up to me to avenge my mentor.", speaker: "player"},
+  { text: " ", speaker: null}
 ];
 
 // Map speakers to their images
@@ -60,7 +61,7 @@ function PrologueMorning() {
         height: '100vh' // Full height
       }}
     >
-      {currentTextIndex < storyData.length ? (
+      {currentTextIndex < storyData.length - 1? (
         // Render the dialogue box if we haven't reached the last index
         <>
           <p className="thetext">{currentText}</p>
@@ -73,10 +74,10 @@ function PrologueMorning() {
       ) : (
         // Render the mission box once the last line of dialogue is done
         <div className="text-box">
-          <h2 className="mission">New Mission</h2>
+          <h2 className="mission">NEW MISSION</h2>
           <p className="missiontext">Detective Harper has been murdered! It's your mission to discover the culprit and uncover the case Harper was working on right before her death.</p>
-          <p className="missiontext">Talk to the townspeople to uncover clues and complete your TASKS to fulfill your mission.</p>
-          <button className="missionButton" onClick={() => navigate('/next-scene')}>Start Mission</button>
+          <p className="missiontext">Talk to the townspeople to uncover clues and complete your <b>TASKS</b> to fulfill your mission.</p>
+          <button className="missionButton" onClick={() => navigate('/suspect')}>Start Mission</button>
         </div>
       )}
     </div>
