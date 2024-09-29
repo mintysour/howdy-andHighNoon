@@ -3,7 +3,7 @@ import './Prologue.css';
 
 const storyData = {
     start: {
-      text: "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, {playerName}",
+      text: "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me...",
       choices: [
         { text: "Go left", next: "leftPath" },
         { text: "Go right", next: "rightPath" },
@@ -41,8 +41,6 @@ const storyData = {
   
     return (
       <div>
-        <h1>Visual Novel</h1>
-  
         {/* Display the initial text */}
         <p>{text}</p>
   
