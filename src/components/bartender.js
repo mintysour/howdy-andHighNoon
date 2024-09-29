@@ -6,7 +6,7 @@ import bartender from './assets/img/Bartender.png';
 // Associate each line with a speaker
 const storyData = [
   { text: "The bartender, Alexa, runs the town’s saloon and was in charge of hosting the party last night. Age: 26", speaker: null},
-  { text: "Bartender Alexa: Welcome back [user]! What brings you to my tavern so early in the day?", speaker: "bartender"},
+  { text: "Bartender Alexa: Welcome back {PlayerName}! What brings you to my tavern so early in the day?", speaker: "bartender"},
   { text: "{PlayerName}: This morning we found Detective Harper shot dead in the town. I need your cooperation in the investigation. ", speaker: "bartender"},
   { text: "Bartender Alexa: No… It can’t be…", speaker: "bartender"},
   { text: "{PlayerName}: Do you have any information?", speaker: "bartender"},
