@@ -7,22 +7,6 @@
     background-position: center;
   }
 
-.thetext {
-  color:rgb(250, 233, 208);
-  position: fixed;
-  bottom: 80px;
-  left: 50%;        /* Centers the box horizontally */
-  transform: translateX(-50%); /* Centers the box */
-  width: 80%;   
-  max-width: 1000px; /* Prevents it from becoming too wide */
-  padding: 20px;    /* Adds padding inside the box */
-  background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
-  border: 2px solid rgb(250, 233, 208);  /* Adds a white border */
-  border-radius: 2px;  /* Rounds the corners */
-  font: 'Courier New', sans-serif;
-  font-size: 25px;
-}
-
 .text-box {
   background-color: rgb(250, 233, 208); /* Semi-transparent black background */
   border: 3px solid rgba(88, 52, 39); 
