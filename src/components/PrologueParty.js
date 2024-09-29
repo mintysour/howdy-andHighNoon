@@ -11,9 +11,9 @@ import neighbor from './assets/img/neighbor.png';
 // Associate each line with a speaker
 const storyData = [
   { text: "You walk into the town saloon with Detective Harper. Upon your arrival, the townsfolk gather around you with excitement and joy.", speaker: null },
-  { text: "Theodore: Look who finally arrived! The heroes of this town!", speaker: "neighbor" },
+  { text: "Neighbor Theodore: Look who finally arrived! The heroes of this town!", speaker: "neighbor" },
   { text: "Bartender Alexa: Welcome to Prairie Moon Tavern! I heard about your case, congrats Harper and {PlayerName}.", speaker: "bartender" },
-  { text: "{PlayerName}: Thank you! Does this mean my drinks are on you? ", speaker: "player" },
+  { text: "{PlayerName}: Thank you! Does this mean my drinks are on you? ", speaker: "bartender" },
   { text: "Bartender Alexa: Haha, if you tell me what your next case is, all drinks are on me.", speaker: "bartender" },
   { text: "Detective Harper: Nice try, our next case is top secret. I can’t disclose any details to anyone.", speaker: "detective" },
   { text: "Mayor Douglas: Top secret? I’m the Mayor, nothing is a secret from me! Fill me in Harper.", speaker: "mayor" },
