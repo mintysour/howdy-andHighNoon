@@ -1,75 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Prologue.css';
 
-const storyData = {
-    start: {
-      text: "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me...",
-      choices: [
-        { text: "Go left", next: "leftPath" },
-        { text: "Go right", next: "rightPath" },
-      ],
-    },
-    leftPath: {
-      text: "You went left and found a treasure!",
-      choices: [{ text: "Take the treasure", next: "end" }],
-    },
-    rightPath: {
-      text: "You went right and fell into a trap!",
-      choices: [{ text: "Try to escape", next: "end" }],
-    },
-    end: {
-      text: "The game has ended.",
-      choices: [],
-    },
+const storyData = [
+  "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...",
+  "{PlayerName}: It was my pleasure! We finally get to see those cowboys behind bars after they stole $2000 worth of supplies from our farmers.",  
+  "Detective Harper: Let’s celebrate our success with everyone at the saloon!"
+];
+
+function Prologue() {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [playerName, setPlayerName] = useState('');
+  const [isNameInputVisible, setIsNameInputVisible] = useState(false);
+
+  const handleClick = () => {
+    if (currentTextIndex === 0) {
+      // Show the name input after the first text
+      setIsNameInputVisible(true);
+    } else if (currentTextIndex < storyData.length - 1) {
+      // Advance the text
+      setCurrentTextIndex(currentTextIndex + 1);
+    }
   };
 
-  function Prologue() {
-    const [currentNode, setCurrentNode] = useState('start');
-    const [playerName, setPlayerName] = useState('');
-    const [isNameEntered, setIsNameEntered] = useState(false);
-  
-    const handleChoice = (nextNode) => {
-      setCurrentNode(nextNode);
-    };
-  
-    const handleNameSubmit = (e) => {
-      e.preventDefault();
-      setIsNameEntered(true);
-    };
-  
-    const { text, choices } = storyData[currentNode];
-  
-    return (
-      <div>
-        {/* Display the initial text */}
-        <p>{text}</p>
-  
-        {!isNameEntered ? (
-          <form onSubmit={handleNameSubmit}>
-            <label>
-              Enter your name:
-              <input
-                type="text"
-                value={playerName}
-                onChange={(e) => setPlayerName(e.target.value)}
-                required
-              />
-            </label>
-            <button type="submit">Submit</button>
-          </form>
-        ) : (
-          <div>
-            {/* Display the text with the player's name */}
-            <p>Detective Harper: I’m glad to have you on board, {playerName}!</p>
-            {choices.map((choice, index) => (
-              <button key={index} onClick={() => handleChoice(choice.next)}>
-                {choice.text}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
-  
-  export default Prologue;
+  const handleNameSubmit = (event) => {
+    event.preventDefault(); // Prevent page reload
+    setIsNameInputVisible(false); // Hide the input field
+    setCurrentTextIndex(currentTextIndex + 1); // Move to the next text
+  };
+
+  return (
+    <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
+      <h1>Visual Novel</h1>
+      <p>{storyData[currentTextIndex]}</p>
+
+      {isNameInputVisible && (
+        <form onSubmit={handleNameSubmit}>
+          <input
+            type="text"
+            value={playerName}
+            onChange={(e) => setPlayerName(e.target.value)}
+            placeholder="Enter your name"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      )}
+    </div>
+  );
+}
+
+export default Prologue;
