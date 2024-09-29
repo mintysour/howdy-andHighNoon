@@ -21,7 +21,8 @@ const storyData = [
   { text: "Mayor Douglas: I had to quiet her, but I should've known she wouldve taught you well, cause she was a damn good detective.", speaker: "mayor"},
   { text: "Mayor Douglas: She shouldn't have been so lenient with me though, look where it got her. Her trust was her most fatal--",  speaker: "mayor"},
   { text: "The sheriff tackles the mayor to the ground and puts handcuffs on him.", speaker: null},
-  { text: "Sheriff Justin: Well, that's enough from him. Good work, {PlayerName}, Harper would be so proud to call you her successor.", speaker: "sheriff"}
+  { text: "Sheriff Justin: Well, that's enough from him. Good work, {PlayerName}, Harper would be so proud to call you her successor.", speaker: "sheriff"},
+  { text: ""}
 ];
 
 // Map speakers to their images
@@ -72,7 +73,7 @@ function Goodending() {
         // Render the mission box once the last line of dialogue is done
         <div className="text-box">
           <h2 className="mission">GOOD ENDING</h2>
-          <p className="missiontext">You were able to find the culprit, protect the town, and avenge Detective Harper!.</p>
+          <p className="missiontext">Congratulations! You were able to find the culprit, protect the town, and avenge Detective Harper! Pat yourself on the back.</p>
           <p className="missiontext">CREDITS: Naomi Dao, Marci Van, Bhavana Venkatesh</p>
           <button className="missionButton" onClick={() => navigate('/')}>Play Again?</button>
         </div>
