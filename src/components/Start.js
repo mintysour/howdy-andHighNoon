@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Start.css'; // Optional: create a CSS file for styles
 
+import logo from './assets/img/logo.png';
+
 const buttonStyle = {
   backgroundColor: '#613624', 
   color: 'white', 
@@ -14,8 +16,7 @@ const buttonStyle = {
 function Start() {
   return (
     <header className="App-header">
-      <h1>Howdy and High Noon:</h1>
-      <h2>A Western Whodunit </h2>
+      <img src = {logo} className = "Start-logo"></img>
       <Link to="/prologue">
         <button style={buttonStyle}>
           Start Game
