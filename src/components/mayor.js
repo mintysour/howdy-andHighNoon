@@ -37,8 +37,6 @@ function Mayor() {
     }
   };
 
-  const backgroundImage = currentTextIndex >= 5 ? deadscene : ''; // Change background after index 5
-
   return (
     <div
       className="mayor"
@@ -46,9 +44,6 @@ function Mayor() {
       style={{
         cursor: 'pointer',
         padding: '20px',
-        backgroundImage: `url(${backgroundImage})`, // Apply background image
-        backgroundSize: 'cover', // Ensure the background covers the whole div
-        backgroundPosition: 'center', // Center the background image
         height: '100vh' // Full height
       }}
     >
