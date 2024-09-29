@@ -33,24 +33,26 @@ function Prologue() {
   const currentText = storyData[currentTextIndex].replace("{PlayerName}", playerName);
 
   return (
-    <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
-      
-      <p class = "thetext">{currentText}</p>
+    <div className="Prologue">
+      <div onClick={handleClick} style={{ cursor: 'pointer', padding: '20px' }}>
+        
+        <p class = "thetext">{currentText}</p>
 
-      {isNameInputVisible && (
-        <form onSubmit={handleNameSubmit}>
-          <input
-            type="text"
-            value={playerName}
-            onChange={(e) => setPlayerName(e.target.value)}
-            placeholder="Enter your first name"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      )}
-      
-      <img src = {detective} className = "Detective"></img>
+        {isNameInputVisible && (
+          <form onSubmit={handleNameSubmit}>
+            <input
+              type="text"
+              value={playerName}
+              onChange={(e) => setPlayerName(e.target.value)}
+              placeholder="Enter your first name"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        )}
+        
+        <img src = {detective} className = "Detective"></img>
+      </div>
     </div>
   );
 }
