@@ -17,7 +17,7 @@
   max-width: 1000px; /* Prevents it from becoming too wide */
   padding: 20px;    /* Adds padding inside the box */
   background-color: rgba(88, 52, 39, 0.85); /* Dark semi-transparent background */
-  border: 0px solid white;  /* Adds a white border */
+  border: 2px solid rgb(250, 233, 208);  /* Adds a white border */
   border-radius: 2px;  /* Rounds the corners */
   font-family: 'Bowlby One', sans-serif;
   border-radius: 3px;  /* Rounds the corners */
@@ -44,7 +44,9 @@ input, select, textarea {
   border: 1px solid rgb(88, 52, 39); /* Border style */
   border-radius: 4px; /* Rounded corners */
   min-width: 20rem;
-  background-color: rgb(250, 233, 208) ;
+  background-color: rgb(250, 233, 208);
+  font-family: 'Lilita One', sans-serif;
+  font-size: 20px;
 }
 
 button {
@@ -54,6 +56,7 @@ button {
   padding: 10px 15px; /* Button padding */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer on hover */
+  font-size: 20px;
 }
 
 body {
