@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Prologue.css';
+import detective from './assets/img/Detective.png';
 
 const storyData = [
   "Detective Harper: What a success! I’m proud to say that we can finally close this case. Thank you for working with me, my apprentice...",
@@ -48,6 +49,8 @@ function Prologue() {
           <button type="submit">Submit</button>
         </form>
       )}
+      
+      <img src = {detective} className = "Detective"></img>
     </div>
   );
 }
