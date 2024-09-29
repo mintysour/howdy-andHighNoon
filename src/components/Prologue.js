@@ -51,6 +51,7 @@ function Prologue() {
           </form>
         )}
         
+        
         <img src = {detective} className = "Detective"></img>
       </div>
     </div>
