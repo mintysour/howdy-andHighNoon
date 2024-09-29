@@ -6,14 +6,16 @@ import './App.css';
 
 function App() {
   return (
-  <Router>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Start />} />
-            <Route path="/prologue" element={<Prologue />} />
-          </Routes>
-        </div>
+    <div className="fixed-size-container">
+      <Router>
+          <div className="App">
+            <Routes>
+              <Route path="/" element={<Start />} />
+              <Route path="/prologue" element={<Prologue />} />
+            </Routes>
+          </div>
       </Router>
+    </div>
     );
 }
 
