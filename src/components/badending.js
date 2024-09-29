@@ -44,7 +44,7 @@ function Badending() {
 
   return (
     <div
-      className="badending"
+      className="ending"
       onClick={handleClick}
       style={{
         cursor: 'pointer',
