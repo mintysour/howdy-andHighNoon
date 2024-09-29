@@ -1,0 +1,75 @@
+.whodunnit {
+    text-align: center;
+    min-height: 100vh;
+    background-image:url('./assets/img/townbackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;                   /* Flexbox for horizontal layout */
+    justify-content: space-around;   /* Even spacing between items */
+    align-items: flex-start;         /* Align items at the top */
+    padding: 20px;
+}
+
+.Suspect-Img {
+    height: 40vmin;
+    pointer-events: none;
+    border: 0px solid white;
+}
+
+
+.TextBox {
+    color: rgba(88, 52, 39);             
+    padding: 20px;
+    margin-bottom: 20px;                 /* Space between the text and the images */
+    text-align: center;
+    border-radius: 10px;                 /* Optional: rounded corners */
+    width: 80%; 
+    top: 50%;
+    left: 50%;             
+    font-family: "Bowlby One", sans-serif;
+}
+
+.Suspect-item-box {
+        background-color: rgb(250, 233, 208); /* Semi-transparent black background */
+    border: 3px solid rgba(88, 52, 39); 
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                 /* Center images and buttons */
+    margin-bottom: 20px;       /* Center the image and button horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 30rem;
+}
+
+.Suspect-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;                 /* Center images and buttons */
+    margin-bottom: 20px;       /* Center the image and button horizontally */
+}
+
+.Suspect-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;                 /* Center images and buttons */
+    margin-bottom: 20px;       /* Center the image and button horizontally */
+}
+
+
+button {
+    font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
+    font-weight: 600; /* Bold weight for emphasis */
+    margin-top: 20px;        /* Add some margin between buttons and images */
+    padding: 10px 20px;
+    grid-column: span 4;
+    margin-right: 20px; /* Add space to the right of each button */
+    margin-left: 20px; /* Add space to the left of each button */
+  }
