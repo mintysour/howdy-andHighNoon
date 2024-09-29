@@ -5,6 +5,7 @@ import Prologue from './Prologue'; // Ensure this path is correct
 import PrologueParty from './PrologueParty';
 import PrologueMorning from './PrologueMorning';
 import Suspect from './suspect'; // Import the Suspect component
+import neighbor from './neighbor'; // Import the neighbor component
 import './App.css';
 
 function App() {
