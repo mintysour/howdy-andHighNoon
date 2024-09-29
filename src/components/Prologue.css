@@ -38,11 +38,11 @@ form {
 }
 input, select, textarea {
   width:  10%; /* Full width */
-  padding: 10px; /* Space inside the input */
-  margin: 5px 0; /* Space between inputs */
+  padding: 15px; /* Space inside the input */
+  margin: 15px ; /* Space between inputs */
   border: 1px solid rgb(88, 52, 39); /* Border style */
   border-radius: 4px; /* Rounded corners */
-  min-width: 20rem;
+  min-width: 17rem;
   background-color: rgb(250, 233, 208);
   font-family: 'Courier New', sans-serif;
   font-weight: 600;
