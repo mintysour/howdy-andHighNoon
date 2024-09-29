@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import './goodending.css';
+//import './goodending.css';
 import mayor from './assets/img/Mayor.png';
 import sheriff from './assets/img/sherrif.png';
 
@@ -50,7 +50,7 @@ function Goodending() {
 
   return (
     <div
-      className="ending"
+      className="goodending"
       onClick={handleClick}
       style={{
         cursor: 'pointer',
