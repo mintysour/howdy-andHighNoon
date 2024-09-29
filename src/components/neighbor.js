@@ -37,8 +37,6 @@ function Neighbor() {
     }
   };
 
-  const backgroundImage = currentTextIndex >= 5 ? deadscene : ''; // Change background after index 5
-
   return (
     <div
       className="neighbor"

@@ -19,7 +19,7 @@ const buttonStyle = {
 function Suspect() {
   return (
     <div className="Suspect">
-        <div className="Suspect-item">
+        <div className="Suspect-item-box">
             <div className="TextBox">
                 <h1>Who do you want to talk to?</h1>
             </div>
