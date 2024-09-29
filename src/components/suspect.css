@@ -1,0 +1,18 @@
+.Suspect {
+    text-align: center;
+    min-height: 100vh;
+    background-image:url('./assets/img/townbackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.Suspect-Img {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+button {
+    font-family: 'Lilita One', sans-serif; /* Use Roboto for buttons */
+    font-weight: 600; /* Bold weight for emphasis */
+  }
